@@ -31,7 +31,7 @@ public class UpworkJavaExerciseTest {
 				duplicateList.add(item);
 			}
 		}
-		assertEquals(duplicateList.size() > 1, false);
+		assertEquals(duplicateList.size() > 0, false);
 	}
 
 

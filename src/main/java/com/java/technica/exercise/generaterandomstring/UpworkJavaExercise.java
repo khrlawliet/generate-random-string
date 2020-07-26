@@ -52,5 +52,33 @@ public class UpworkJavaExercise {
 
 	}
 
+	public void intArrays(int[] arr, int k) {
+		int[] res = {};
+		for (int i = 0; i < k / 2; i++) {
+			int swap = arr[i];
+			arr[i] = arr[k - i - 1];
+			arr[k - i - 1] = swap;
+			System.out.println(swap);
+		}
+
+	}
+	
+//	upworkJavaExercise.intArrays(new int[] { 2, 3, 4, 2, 12, 5 }, 6);
+//	int[] array = { 45, 12, 3 };
+//	int temp;
+//	for (int i = 1; i < array.length; i++) {
+//		for (int j = i; j > 0; j--) {
+//			if (array[j] < array[j - 1]) {
+//				temp = array[j];
+//				System.out.println("t " + temp);
+//				array[j] = array[j - 1];
+//				array[j - 1] = temp;
+//			}
+//		}
+//	}
+//	for (int i = 0; i < array.length; i++) {
+//		System.out.println(array[i]);
+//	}
+//}
 
 }
